@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GivFund</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="./style.css" type="text/css" rel="stylesheet"/>
+    <link href="./class-settings.css" type="text/css" rel="stylesheet"/>
+    
+</head>
+
+<body>
+
+    <nav id="myNavbar" class="navbar navbar-default navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" href="#">
+                    <i class="fa fa-gg" style="font-size:24px;color:red"></i> GivFund</a>
+
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="input-group add-on">
+                        <div class="input-group-btn">
+
+                            <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text">
+                            <div class="input-group-btn">
+                                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">All <span class="caret"></span></button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <table style="width:50%">
+                                            <tr>
+                                                <th>Sort</th>
+                                                <th>Sector</th>
+                                                <th>Country</th>
+                                            </tr>
+                                            <tr>
+                                                <td class="hide_bot" width="200">
+                                                    <a href="http://example.com">
+                                                        <div style="height:100%;width:100%">
+                                                            Trending
+                                                        </div>
+                                                    </a>
+                                                </td>
+                                                <td class="hide_bot"></td>
+                                                <td class="hide_bot"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hide_bot">Amount Left </td>
+                                                <td class="hide_bot"></td>
+                                                <td class="hide_bot"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hide_bot">Expiring</td>
+                                                <td class="hide_bot"></td>
+                                                <td class="hide_bot"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hide_bot">Amount:low to high</td>
+                                                <td class="hide_bot"></td>
+                                                <td class="hide_bot"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hide_bot">Amount:high to low</td>
+                                                <td class="hide_bot"></td>
+                                                <td class="hide_bot"></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="hide_bot">Loan length</td>
+                                                <td class="hide_bot"></td>
+                                                <td class="hide_bot"></td>
+                                            </tr>
+
+                                        </table>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="glyphicon glyphicon-home"></span> Stories</a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-user"></span> Volunteers</a></li>
+                    <li><a href="#" data-toggle="modal" data-target="#myModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Menu <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Loans</a></li>
+                            <li><a href="#">Subscribe</a></li>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">How GivFund Works</a></li>
+                            <li><a href="#">Impact</a></li>
+                            <li><a href="#">Team</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <p>Login with Social Accounts</p>
+                    <a class="btn btn-block btn-social btn-facebook">
+                        <span class="fa fa-facebook"></span>  Login with Facebook
+                    </a><br>
+                    <a class="btn btn-block btn-social btn-twitter">
+                        <span class="fa fa-twitter"></span> Sign in with Twitter
+                    </a>
+                </div>
+
+                <div class="modal-body">
+                    <p>Login with your email and password</p>
+                    <form>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email" style="background-color:#f2f2f2;">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="pwd" placeholder="Password" style="background-color:#f2f2f2;">
+                        </div>
+                        <div style="text-align: right">
+                            <input type="submit" value="Login" class="btn btn-danger active">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer" style="background-color:#f2f2f2;">
+                    <a>
+                        <p style="text-align:left;">Forgot your password</p>
+                    </a>
+                    <a data-toggle="modal" data-dismiss="modal" data-target="#signup">
+                        <h4 style="text-align:left;">Sign Up Now</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- Modal -->
+    <div class="modal fade" id="signup" role="dialog">
+        <div class="modal-dialog modal-sm">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <form>
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4>Sign up in seconds</h4>
+                    <br>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Email" style="background-color:#f2f2f2;">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="pwd" placeholder="Password" style="background-color:#f2f2f2;">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="pwd" placeholder="Confirm Password" style="background-color:#f2f2f2;">
+                        </div>
+                </div>
+                <div class="modal-footer" style="background-color:#f2f2f2;">
+                    <div style="text-align: center;">
+                         <input type="submit" value="SIGN UP" class="btn btn-danger active">
+                    </div><br>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+	<div class="settings-wrap">
+	<div class="row">
+	<div class="col-sm-4"><h1>Settings</h1></div>
+	<div class="col-sm-8"><form><table class="table">
+	<tr><td>First Name	</td><td><input type="text" name="firstname" /></td></tr>
+	<tr><td>Last Name	</td><td><input type="text" name="lastname" /></td></tr>
+	<tr><td>Username	</td><td><input type="username" name="username" /></td></tr>
+	<tr><td>Email		</td><td><input type="email" name="email" placeholder="someone@example.com" /></td></tr>
+	<tr><td>Country	: </td><td><input type="country" name="cpuntry" /></td></tr>
+	</table></form><a href="pswrd.html">Change Password</a></div>
+	</div>
+	</div>
+    <footer class="container-fluid bg-4 text-center">
+        <div class="col-md-4 ">"
+            <ul>
+                <li><b><a href="#" style="color:#d9d9d9;">GivFund</a></b><br></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">How GivFund works</a></li>
+                <li><a href="#">Impact</a></li>
+                <li><a href="#">Team</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4 ">"
+            <ul>
+                <li><b><a href="#" style="color:#d9d9d9;">Borrow</a></b><br></li>
+                <li><a href="#">Find out more</a></li>
+                <li><a href="#">Apply</a></li>
+                <li><a href="#">subscribe</a></li>
+            </ul>
+        </div>
+        <div class="col-md-4 text-left">"
+            <form>
+                <div class="input-group">
+                    <input type="email" class="form-control" size="10" placeholder="Email Address" required>
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-danger">Subscribe</button>
+                    </div>
+                </div>
+            </form>
+            <br>
+            <p>© 2016 - All Rights Reserved</p>
+            <p>
+                <i class="fa fa-camera-retro" style="font-size:24px">&nbsp;</i><i class="fa fa-facebook-square" style="font-size:24px"></i>&nbsp;
+                <i class="fa fa-linkedin" style="font-size:24px"></i>
+            </p>
+        </div>
+    </footer>
+
+    
+
+</body>
+
+</html>
