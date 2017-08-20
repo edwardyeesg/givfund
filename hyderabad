@@ -1,0 +1,63 @@
+<div id="mapPart">
+        <div class=row><div class="col-xs-12"><br></div></div>
+        <div class=row><div class="col-xs-12"><br></div></div>
+        <div class=row>
+        <div class="col-xs-6">
+        <div class="thumbnail">
+        <img class="img-responsive"   src="./images/jellyfish.jpg" width="100%"  />
+        </div>
+        <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="72"
+          aria-valuemin="0" aria-valuemax="100" style="width:72%">
+        </div>
+        </div>
+	      <span class="borrower-name">Jellies for the poor</span>
+	      <span class="borrower-supply">720</span><br>
+	      <span class="borrower-demand">1000(72%)</span>
+        </div>
+        <div class="col-xs-6">
+        <div class="thumbnail">
+        <img class="img-responsive" src="./images/jellyfish.jpg" width="100%" />
+        </div>
+         <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="72"
+          aria-valuemin="0" aria-valuemax="100" style="width:48%">
+        </div>
+        </div>
+       	  <span class="borrower-name">Tulips for the poor</span>
+      	  <span class="borrower-supply">480</span><br>
+	        <span class="borrower-demand">1000(48%)</span>
+        </div>
+        </div>
+        <div class=row><div class="col-xs-12"><br></div></div>
+        <div class=row>
+        <div class="col-xs-6">
+        <div class="thumbnail">
+          <img class="img-responsive" src="./images/jellyfish.jpg"/ width="100%" >
+        </div>
+         <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="72"
+          aria-valuemin="0" aria-valuemax="100" style="width:36%">
+        </div>
+        </div>
+	        <span class="borrower-name">Chrysanthemum for the poor</span>
+          <span class="borrower-supply">360</span><br>
+          <span class="borrower-demand">1000(36%)</span>
+        </div>
+
+        <div class="col-xs-6">
+        <div class="thumbnail">
+          <img class="img-responsive" src="./images/jellyfish.jpg" width="100%" />
+        </div>
+         <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="72"
+          aria-valuemin="0" aria-valuemax="100" style="width:24%">
+        </div>
+        </div>
+	        <span class="borrower-name">Hydrangeas for the poor</span>
+	        <span class="borrower-supply">240</span>
+	        <span class="borrower-demand">1000(24%)</span>
+        </div>
+        </div>
+        
+</div>
