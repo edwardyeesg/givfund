@@ -1,0 +1,16 @@
+.about-wrap .about-profile {
+	width:128px;
+	height:128px;
+}
+/*.about-wrap .col-sm-4 h1 {
+	display:inline;
+}*/
+.about-wrap .col-sm-4 {
+	text-align:center;
+}
+.about-wrap .col-sm-8 {
+	padding:16px;
+	margin:16px 0;
+	border:0 solid #ddd;
+	border-left-width:2px;
+}

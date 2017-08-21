@@ -1,0 +1,35 @@
+
+.progress  {
+	height:8px;
+	background-color: #fbb;
+	border-radius: 0;
+}
+.thumbnail
+{
+	background-color: darkgray;
+	border-radius: 0;
+}
+.progress-bar  {
+	background-color: #a00;
+}
+.borrower-name {
+	float:left;
+	font-weight:700;
+}
+.borrower-supply {
+	float:right;	
+	font-weight:700;
+}
+.borrower-supply:before {
+	content:"$"
+}
+.borrower-supply:after {
+	content:"raised"
+}
+.borrower-demand {
+	float:right;
+	font-style:italic;
+}
+.borrower-demand:before {
+	content:"of $"
+}

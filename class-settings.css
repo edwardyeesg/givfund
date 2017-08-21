@@ -1,0 +1,15 @@
+.settings-wrap {
+	margin-top:48px;
+}
+/*.about-wrap .col-sm-4 h1 {
+	display:inline;
+}*/
+.settings-wrap .col-sm-4 {
+	text-align:center;
+}
+.settings-wrap .col-sm-8 {
+	padding:16px;
+	margin:16px 0;
+	border:0 solid #ddd;
+	border-left-width:2px;
+}
