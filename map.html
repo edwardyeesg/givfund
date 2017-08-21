@@ -1,0 +1,125 @@
+<html>
+    <head>
+    <title>GivFund</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://fortawesome.github.io/Font-Awesome/assets/font-awesome/css/font-awesome.css" rel="stylesheet">
+    <link href="./borrower.css" type="text/css" rel="stylesheet"/>
+    <style>
+      #map{
+        float:left;
+        left:0;
+      }
+    </style>
+    <script>
+            function mapShow(id) {
+                console.log(id);
+                $.ajax({
+                url: "./"+id+".html",
+                method: "GET",
+                success: function (result) 
+                {
+                    console.log("./"+id+".html");
+                    var htmlFiltered = $(result).filter("#mapPart");
+                    console.log(htmlFiltered.html());
+                    var finalText = htmlFiltered.html();
+                    $("#mapContent").html(finalText);
+                }
+                });
+                }
+            </script>
+  </head>
+  <body>
+    <div id="mapArea">
+      <div class="col-md-6" >
+        <img src="indiaMap.png" class="img-responsive" id="map" alt="Tamil nadu Map" usemap="#cordMap"/>
+        <map name="cordMap">
+           <area shape="circle" coords="100,314,15" id="jaipur" onclick="mapShow(this.id)">
+           <area shape="circle" coords="136,365,15" id="aaa" onclick="mapShow(this.id)">
+           <area shape="circle" coords="99,392,15" id="hyderabad" onclick="mapShow(this.id)">
+           <area shape="circle" coords="89,448,15" id="banglore" onclick="mapShow(this.id)">
+           <area shape="circle" coords="124,512,15" id="sriLanka" onclick="mapShow(this.id)">
+           <area shape="circle" coords="218,340,15" id="bangladesh" onclick="mapShow(this.id)">
+           <area shape="circle" coords="279,319,15" id="bbb" onclick="mapShow(this.id)">
+           <area shape="circle" coords="274,385,15" id="burma" onclick="mapShow(this.id)">
+           <area shape="circle" coords="301,415,15" id="thailand" onclick="mapShow(this.id)">
+           <area shape="circle" coords="334,387,15" id="laos" onclick="mapShow(this.id)">
+           <area shape="circle" coords="364,367,15" id="hi no" onclick="mapShow(this.id)">
+           <area shape="circle" coords="296,497,15" id="gulf of thailand" onclick="mapShow(this.id)">
+           <area shape="circle" coords="363,493,15" id="ccc" onclick="mapShow(this.id)">
+           <area shape="circle" coords="292,553,15" id="ddd" onclick="mapShow(this.id)">
+           <area shape="circle" coords="321,593,15" id="eee" onclick="mapShow(this.id)">
+           <area shape="circle" coords="527,458,15" id="philipines" onclick="mapShow(this.id)">
+           <area shape="circle" coords="503,616,15" id="indonesia" onclick="mapShow(this.id)">
+        </map>
+      </div>
+      <div class="col-md-6" id="mapContent">
+        <div class=row><div class="col-xs-12"><br></div></div>
+        <div class=row><div class="col-xs-12"><br></div></div>
+        <div class=row>
+        <div class="col-xs-6">
+        <div class="thumbnail">
+        <img class="img-responsive"  width="100%" src="./images/jellyfish.jpg"/>
+        </div>
+        <div class="progress">
+        <div class="progress-bar" role="progressbar" aria-valuenow="72"
+          aria-valuemin="0" aria-valuemax="100" style="width:72%">
+        </div>
+        </div>
+	      <span class="borrower-name">Jellies for the poor</span>
+	      <span class="borrower-supply">720</span><br>
+	      <span class="borrower-demand">1000(72%)</span>
+        </div>
+        <div class="col-xs-6">
+        <div class="thumbnail">
+        <img class="img-responsive" width="100%"src="./images/tulips.jpg"/>
+        </div>
+         <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="72"
+          aria-valuemin="0" aria-valuemax="100" style="width:48%">
+        </div>
+        </div>
+       	  <span class="borrower-name">Tulips for the poor</span>
+      	  <span class="borrower-supply">480</span><br>
+	        <span class="borrower-demand">1000(48%)</span>
+        </div>
+        </div>
+        <div class=row><div class="col-xs-12"><br></div></div>
+        <div class=row>
+        <div class="col-xs-6">
+        <div class="thumbnail">
+          <img class="img-responsive" src="./images/Chrysanthemum.jpg"/>
+        </div>
+         <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="72"
+          aria-valuemin="0" aria-valuemax="100" style="width:36%">
+        </div>
+        </div>
+	        <span class="borrower-name">Chrysanthemum for the poor</span>
+          <span class="borrower-supply">360</span><br>
+          <span class="borrower-demand">1000(36%)</span>
+        </div>
+
+        <div class="col-xs-6">
+        <div class="thumbnail">
+          <img class="img-responsive" src="./images/hydrangeas.jpg"/>
+        </div>
+         <div class="progress">
+        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="72"
+          aria-valuemin="0" aria-valuemax="100" style="width:24%">
+        </div>
+        </div>
+	        <span class="borrower-name">Hydrangeas for the poor</span>
+	        <span class="borrower-supply">240</span>
+	        <span class="borrower-demand">1000(24%)</span>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+    
+  </body>
+</html>
